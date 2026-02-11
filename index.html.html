@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường Lớp 12 - Nguyễn Huy Hoàng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mali:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-dark: #1e3a8a; /* Xanh dương đậm */
+            --accent-gold: #f59e0b; /* Vàng kim */
+            --light-gray: #f1f5f9;
+            --bg-page: #0f172a; /* Nền tối sang trọng */
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            font-family: 'Mali', cursive;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bao-tuong {
+            max-width: 850px;
+            width: 100%;
+            background: var(--white);
+            border: 8px solid var(--main-dark);
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+            padding-bottom: 40px;
+            overflow: hidden;
+        }
+
+        /* Trang trí góc */
+        .bao-tuong::before {
+            content: "⭐"; font-size: 40px; position: absolute; top: 10px; left: 10px;
+        }
+        .bao-tuong::after {
+            content: "🚀"; font-size: 40px; position: absolute; bottom: 10px; right: 10px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--main-dark), #1d4ed8);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.2rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        section { padding: 25px; }
+
+        h2 {
+            color: var(--white);
+            background: var(--main-dark);
+            padding: 10px 20px;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            border: 2px solid var(--main-dark);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--main-dark); color: white; padding: 12px; }
+        td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+
+        .box-info {
+            background: #eff6ff;
+            border-left: 10px solid var(--accent-gold);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+
+        .fb-btn {
+            display: inline-block;
+            background: #1e40af;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .fb-btn:hover { background: var(--accent-gold); transform: translateY(-3px); }
+
+        .poem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .poem-item {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--main-dark);
+        }
+
+        .poem-img {
+            width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;
+        }
+
+        .poem-text { font-style: italic; line-height: 1.8; color: #1e293b; }
+
+        footer { text-align: center; padding: 20px; color: #64748b; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="bao-tuong">
+    <header>
+        <h1>Nguyễn Huy Hoàng 🔥</h1>
+        <div class="subtitle">Khát vọng vươn xa - Bản lĩnh 12</div>
+    </header>
+
+    <section>
+        <h2>📅 Thời Khóa Biểu</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiết</th>
+                        <th>Thứ 2</th>
+                        <th>Thứ 3</th>
+                        <th>Thứ 4</th>
+                        <th>Thứ 5</th>
+                        <th>Thứ 6</th>
+                        <th>Thứ 7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>HĐTN-HN</td><td>Tin học</td><td>Ngữ văn</td><td>Toán</td><td>GD KT&PL</td><td>Địa lý</td></tr>
+                    <tr><td>2</td><td>GD LSĐP</td><td>Tin học</td><td>Ngữ văn</td><td>Toán</td><td>GD KT&PL</td><td>Địa lý</td></tr>
+                    <tr><td>3</td><td>Lịch sử</td><td>Ngoại ngữ</td><td>GD Thể chất</td><td>Ngoại ngữ</td><td>Lịch sử</td><td>Ngữ văn</td></tr>
+                    <tr><td>4</td><td>Hóa học</td><td>Toán HT</td><td>Toán</td><td>Ngoại ngữ</td><td>Văn HT</td><td>GD Thể chất</td></tr>
+                    <tr><td>5</td><td>Hóa học</td><td>Toán HT</td><td>Toán</td><td>Ngữ văn</td><td>Văn HT</td><td>HĐTN-HN</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎯 Mục Tiêu & Đam Mê</h2>
+        <div class="box-info">
+            <p><strong>⚽ Đam mê:</strong> Chơi bóng đá mỗi chiều cuối tuần, tìm hiểu về phần cứng máy tính và thích chinh phục những bài Toán khó.</p>
+            <p><strong>🚀 Đích đến:</strong> Mình đang nỗ lực hết mình để đặt chân vào cánh cửa đại học khối ngành Công nghệ thông tin hoặc Kỹ thuật cơ khí. Với mình, lớp 12 là đường chạy nước rút để khẳng định bản thân.</p>
+        </div>
+        
+        <center>
+            <a href="#" class="fb-btn">🤝 Kết nối với Hoàng tại Facebook</a>
+        </center>
+    </section>
+
+    <section>
+        <h2>📜 Góc Ý Chí</h2>
+        <div class="poem-grid">
+            <div class="poem-item">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400" alt="Hành trình" class="poem-img">
+                <p style="font-weight: bold; color: var(--main-dark);">Chinh Phục Đỉnh Cao</p>
+                <p class="poem-text">
+                    "Đường dài vạn dặm chẳng nề chi
+                    Nam nhi bản lĩnh quyết tâm đi
+                    Mười hai năm ấy rèn ý chí
+                    Vinh quang phía trước có ngại gì."
+                </p>
+            </div>
+            <div class="poem-item">
+                <img src="https://images.unsplash.com/photo-1454165833767-027eeed15b3b?auto=format&fit=crop&w=400" alt="Thành công" class="poem-img">
+                <p style="font-weight: bold; color: var(--main-dark);">Ánh Sáng Huy Hoàng</p>
+                <p class="poem-text">
+                    "Tên gọi là Hoàng, sáng tựa gương
+                    Dù cho bão táp giữa phong sương
+                    Vững tay lái nhé, chàng trai trẻ
+                    Rạng rỡ tương lai khắp nẻo đường."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thiết kế riêng cho Nguyễn Huy Hoàng - Lớp 12 © 2026</p>
+    </footer>
+</div>
+
+</body>
+</html>
